@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <body>
-    <textarea id="source">
-
-class: center, middle
-
+  
 # Титульний слайд
 
 ---
@@ -56,10 +53,6 @@ class: center, middle
 
 Деякий текст.
 
-    </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-    <script>    
-        var slideshow = remark.create();
-    </script>
+
 </body>
 </html>
