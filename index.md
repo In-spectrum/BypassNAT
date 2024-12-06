@@ -1,10 +1,21 @@
-title: Cистема удаленного доступа к устройствам
----
-Используйте собственный сервер - ваши данные будут доступны только вам.
-Поддержка: х86-64 - Windows, Ubuntu; ARM - РасбериПи, НВидиа-ТХ2, Android (клиентская часть).
-
-Задумывалась для:
-- удаленного доступа к устройствам, которые находятся в сети, где используется NAT.
-- использования собственного сервера управления и передачи данных в глобальных и локальных сетях;
-- настройки ssh-туннеля и доступа к устройству по ssh-протоколу;
-- развертывание для АРМ;
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My First Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <h1>My First Page</h1>
+    <section>
+      This is the content of my page
+    </section>
+    <footer>
+      &copy; to me
+    </footer>
+  </body>
+</html>
