@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <body>
   
 # Титульний слайд
