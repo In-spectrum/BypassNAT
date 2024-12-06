@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="logo.png" alt="MediaMTX / rtsp-simple-server">
+  MediaMTX / rtsp-simple-server
 </h1>
 
 <br>
