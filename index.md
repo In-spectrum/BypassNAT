@@ -1,17 +1,13 @@
-<html lang="en">
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
-    </nav>
-    <h1>My First Page</h1>
-    <a href="#link" title="внутрішнє посилання">Тут натискаємо</a>
-    <a id="link">Сюди приходимо (текст можна видалити)<a/>
-    <section>
-      This is the content of my page
-    </section>
-    <footer>
-      &copy; to me
-    </footer>
-  </body>
-</html>
+*Курсивний*  _текст_
+
+**Напівжирний**  __текст__
+
+==Виділений текст==
+
+~~Закреслений текст~~ 
+
+> Текст цитати.
+
+H~2~O це формула води.
+
+1 MiB = 2^20^ байт = 1024 KiB.
