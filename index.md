@@ -1,4 +1,6 @@
 <h1 align="center">
+  <img src="manual/images/baner.bmp" alt="FaNAT">
+  <br>
   Система удаленного доступа к устройствам.
 </h1>
 
