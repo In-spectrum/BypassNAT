@@ -25,6 +25,9 @@
   * [Установка](#install)
   * [Параметры запуска](#start-property)
 * [Video-server](#video-server)
+* [FaNAT-client](#fanat-client)
+  * [Функции](#functions-1)
+  * [FaNAT-client](#fanat-client)
 
 ## FaNAT-server
 ### Functions
@@ -51,18 +54,53 @@
 Через 30сек. клиент переподключится к серверу для его повторного определения в сети._
 
  ## Video-server
- _***используется сторонне ПО**_<br>
+ _*используется сторонне ПО_<br>
  
  **Features**<br>
  Публикация и трансляция видеопотока рабочего стола управляемого устройства.
 
 **Пример:**
 - <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">mediamtx</a> - доступно RTSP, RTMP.... протоколы;
-- <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">Nginx-RTMP</a> - доступно RTMP-протоколы;
-- или другой RTSP, RTMP сервер...
+- <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-video-streaming-server-using-nginx-rtmp-on-ubuntu-20-04" target="_blank">Nginx-RTMP</a> - доступно RTMP-протокол;
+- или другой RTSP, RTMP сервер;
 
-Установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента FaNATClient-Lite (url) или FaNATClient-okl (url).
-Установка видео-сервера нужна, если планируете делать захват(трансляцию) рабочего стола - используется версия клиента FaNATClient (url) и FaNATClient-console (url).
+**Specifications**
+- установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента FaNAT-client-lite (url) или FaNAT-client-okl (url).;
+- установка видео-сервера нужна, если планируете делать захват(трансляцию) рабочего стола - используется версия клиента FaNAT-client (url) и FaNAT-client-console (url);
+
+## FaNAT-client
+### Functions  
+  - захват, трансляция, просмотр рабочего стола (RTSP, RTMP-поток);
+  - оправка, эмуляция сигналов мышки и клавиатуры;
+  - отдельно, использование командной строки на управляемом устройстве. Exemple п.9.1 url;
+  - возможность запустить ssh-клиент с обратным туннелем и получить доступ к устройству по ssh-протоколу. Exemple п.9.2 url;
+  - обмен файлами. Файлы сохраняются в Download folder;
+  - консольный вариант для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.
+
+### FaNAT-client - фул-версия с пользовательским интерфейсом.
+_*Требуется установку дополнительного ПО - url_
+#### Доступно:
+- поиск и управление устройствами в сети;
+- захват, трансляция, просмотр рабочего стола;
+- отправка сигналов мышки и клавиатуры;
+- эмуляцию сигналов мышки и клавиатуры;
+- отправка, выполнение инструкций в командной строке на управляемом устройстве и получение результата от него;
+- обмен файлами;
+- настройка качества видеопотока; 
+
+#### Установка 
+##### Windows:
+- установите GStreamer(url)... - url. п.8.1.1;
+- загрузите архив приложения и разархивируйте его. Запустите FaNATClient.ехе
+
+##### Ubuntu:
+- для отображения интерфейса и эмуляции сигналов клавиатуры:
+	# sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
+- установка GStreamer(url):
+	# sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
+- загрузите архив приложения (url) и разархивируйте его. В comandline запустите ./FaNATClient.sh
+
+
 
 
 
