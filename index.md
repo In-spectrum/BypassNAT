@@ -56,13 +56,10 @@
  **Features**<br>
  Публикация и трансляция видеопотока рабочего стола управляемого устройства.
 
-Например:
+**Пример:**
 - <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">mediamtx</a> - доступно RTSP, RTMP.... протоколы;
-- [mediamtx](https://github.com/bluenviron/mediamtx/tree/main){:target="_blank"} - доступно RTSP, RTMP.... протоколы;
-	- Развёртывание - url.
- 	-  Настройка - url. 
-- Nginx-RTMP - url. Настройка RTMP - url.  Доступен только RTMP-протокол.
-Или другой RTSP, RTMP сервер...
+- <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">Nginx-RTMP</a> - доступно RTMP-протоколы;
+- или другой RTSP, RTMP сервер...
 
 Установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента FaNATClient-Lite (url) или FaNATClient-okl (url).
 Установка видео-сервера нужна, если планируете делать захват(трансляцию) рабочего стола - используется версия клиента FaNATClient (url) и FaNATClient-console (url).
