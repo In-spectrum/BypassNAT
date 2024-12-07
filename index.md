@@ -58,7 +58,7 @@
 
 Например:
 - <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">mediamtx</a> - доступно RTSP, RTMP.... протоколы;
-- [mediamtx](https://github.com/bluenviron/mediamtx/tree/main "title" target="_blank") - доступно RTSP, RTMP.... протоколы;
+- [mediamtx](https://github.com/bluenviron/mediamtx/tree/main){:target="_blank"} - доступно RTSP, RTMP.... протоколы;
 	- Развёртывание - url.
  	-  Настройка - url. 
 - Nginx-RTMP - url. Настройка RTMP - url.  Доступен только RTMP-протокол.
