@@ -52,6 +52,8 @@
 		* [Windows](#windows-3)
 		* [Ubuntu](#ubuntu-3)
    	* [Параметры запуска](#properties-2)
+* [**Installing additional software**](#installing-additional-software)
+   * [GStreamer for Windows](#gstreamer-for-windows) 
 
 ## Video-server
  _&ensp;&nbsp;*используется сторонне ПО_<br>
@@ -70,7 +72,7 @@
 
 ## FaNAT-server
 ### Functions
-- поиск доступных устройств, обмен данными между ними;
+- поиск доступных устройств и обмен данными между ними;
    
 ### Install
  - загрузите архив приложения  соответствующий вашей ОС и разархивируйте. Url;
@@ -107,7 +109,7 @@ _&ensp;&nbsp;*требуется установка дополнительног
   
 #### **Install**
 ##### &emsp;Windows:
-- установите <a href="https://gstreamer.freedesktop.org/features/index.html" target="_blank">GStreamer</a> - url. п.8.1.1;
+- установите GStreamer - [GStreamer for Windows](#gstreamer-for-windows);
 - загрузите <a href="https://url" target="_blank">архив приложения</a> и разархивируйте его. Запустите **_FaNATClient.ехе_**
 
 ##### &emsp;Ubuntu:
@@ -115,7 +117,7 @@ _&ensp;&nbsp;*требуется установка дополнительног
 ```
 #sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
 ```
-- дополнительные плагины <a href="https://gstreamer.freedesktop.org/features/index.html" target="_blank">GStreamer</a>:
+- дополнительные плагины GStreamer:
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
 ```
@@ -123,8 +125,8 @@ _&ensp;&nbsp;*требуется установка дополнительног
   
 ### **FaNAT-client-lite**
 **C пользовательским интерфейсом.**<br>
-_&ensp;&nbsp;*уменьшен функционал;
-_&ensp;&nbsp;*требуется незначительная установка дополнительного ПО_
+_&ensp;&nbsp;*уменьшен функционал_
+<br>_&ensp;&nbsp;*требуется незначительная установка дополнительного ПО_
 
 #### **Available:**
 - поиск и управление устройствами в сети;
@@ -149,7 +151,7 @@ _&ensp;&nbsp;*требуется незначительная установка
 ```
 #sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
 ```
-- дополнительные плагины <a href="https://gstreamer.freedesktop.org/features/index.html" target="_blank">GStreamer</a>:
+- дополнительные плагины GStreamer:
 ```
 #sudo apt-get install gstreamer1.0-libav gstreamer1.0-plugins-bad -y
 ```
@@ -174,7 +176,7 @@ _&ensp;&nbsp;*требуется установку дополнительног
   
 #### **Install** 
 ##### &emsp;Windows:
-- установите <a href="https://gstreamer.freedesktop.org/features/index.html" target="_blank">GStreamer</a> - url. п.8.1.1;
+- установите GStreamer - [GStreamer for Windows](#gstreamer-for-windows);
 - загрузите <a href="https://url" target="_blank">архив приложения</a> и разархивируйте его. Запустите **_FaNATClient.ехе_**
 
 ##### &emsp;Ubuntu:
@@ -182,7 +184,7 @@ _&ensp;&nbsp;*требуется установку дополнительног
 ```
 #sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
 ```
-- дополнительные плагины <a href="https://gstreamer.freedesktop.org/features/index.html" target="_blank">GStreamer</a>:
+- дополнительные плагины GStreamer:
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
 ```
@@ -201,8 +203,8 @@ _&ensp;&nbsp;*требуется установку дополнительног
 
 ### **FaNAT-client-console-lite**
 **Console application. Для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.**<br>
-_&ensp;&nbsp;*уменьшен функционал;_
-<br>&ensp;&nbsp;*требуется незначительная установка дополнительного ПО;_
+_&ensp;&nbsp;*уменьшен функционал_
+_<br>&ensp;&nbsp;*требуется незначительная установка дополнительного ПО_
 
 #### **Available:**
 - выполнение инструкций в командной строке на управляемом устройстве и отпрвка результатов;
@@ -234,3 +236,9 @@ _&ensp;&nbsp;*уменьшен функционал;_
 **-ds** - использовать другой доступный сервер;  _**./FaNATClient.sh -ds 1**_<br>
 **-kds** - использовать другой доступный сервер c ключом доступа;  _**./FaNATClient.sh -ds 1 -kds ExxxRt17j**_<br>
 
+## Installing additional software
+### GStreamer for Windows
+- загрузите <a href="https://gstreamer.freedesktop.org/data/pkg/windows/1.20.7/mingw/gstreamer-1.0-mingw-x86_64-1.20.7.msi и https://gstreamer.freedesktop.org/data/pkg/windows/1.20.7/mingw/gstreamer-1.0-devel-mingw-x86_64-1.20.7.msi" target="_blank">установочные файлы</a>;
+- запустите их с правами администратора;
+- при установке **выберите все плагины**;
+- add 'C:\gstreamer\1.0\mingw_x86_64\bin\' to **PATH** system;
