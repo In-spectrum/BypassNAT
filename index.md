@@ -24,7 +24,7 @@
 * [**FaNAT-server**](#fanat-server)
   * [Функции](#functions)
   * [Установка](#install)
-  * [Параметры запуска](#start-property)
+  * [Параметры запуска](#properties)
 * [**FaNAT-client**](#fanat-client)
   * [Функции](#functions-1)
   * [**FaNAT-client-fv**](#fanat-client-fv)
@@ -38,20 +38,20 @@
   	* [Установка](#install-2)
 		* [Windows](#windows-1)
 		* [Ubuntu](#ubuntu-1)
-  * [**FaNAT-client-console-cc**](#fanat-client-console-cc)
+  * [**FaNAT-client-console-fv**](#fanat-client-console-fv)
 	* [Available](#available-2)
   	* [Unavailable](#unavailable-1)
   	* [Установка](#install-3)
 		* [Windows](#windows-2)
 		* [Ubuntu](#ubuntu-2)
-   	* [Параметры запуска](#start-property-1)
-  * [**FaNAT-client-console-cl**](#fanat-client-console-cl)
+   	* [Параметры запуска](#properties-1)
+  * [**FaNAT-client-console-lite**](#fanat-client-console-lite)
 	* [Available](#available-3)
   	* [Unavailable](#unavailable-2)
   	* [Установка](#install-4)
 		* [Windows](#windows-3)
 		* [Ubuntu](#ubuntu-3)
-   	* [Параметры запуска](#start-property-2)
+   	* [Параметры запуска](#properties-2)
 
 ## Video-server
  _&ensp;&nbsp;*используется сторонне ПО_<br>
@@ -76,7 +76,7 @@
  - загрузите архив приложения  соответствующий вашей ОС и разархивируйте. Url;
  - запустите сервер: **_./FaNATServer.sh_** - для Ubuntu или **_FaNATServer.ехе_** - для Windows;
 
-### Start property
+### Properties
 **-pas** - set server password (по умолчанию 1111); _**./FaNATServer.sh -pas 2227**_<br>
 **-p** - set listen port; _**./FaNATServer.sh -p 1675**_<br>
 **-la** - время для отключения клиентов с низкой активность; _**./FaNATServer.sh -la 60**_<br>
@@ -155,7 +155,7 @@ _&ensp;&nbsp;*требуется незначительная установка
 ```
 - загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
-### **FaNAT-client-console-cc**
+### **FaNAT-client-console-fv**
 **Console application. Для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.**<br>
 _&ensp;&nbsp;*требуется установку дополнительного ПО_
 
@@ -188,7 +188,7 @@ _&ensp;&nbsp;*требуется установку дополнительног
 ```
 - загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
-#### **Start property**
+#### **Properties**
 **-spas** - set server password (по умолчанию 1111); _**./FaNATClient.sh -spas 2227**_<br>
 **-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_<br>
 **-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_<br>
@@ -199,7 +199,7 @@ _&ensp;&nbsp;*требуется установку дополнительног
 **-ds** - использовать другой доступный сервер;  _**./FaNATClient.sh -ds 1**_<br>
 **-kds** - использовать другой доступный сервер c ключом доступа;  _**./FaNATClient.sh -ds 1 -kds ExxxRt17j**_
 
-### **FaNAT-client-console-cl**
+### **FaNAT-client-console-lite**
 **Console application. Для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.**<br>
 _&ensp;&nbsp;*уменьшен функционал;_
 <br>&ensp;&nbsp;*требуется незначительная установка дополнительного ПО;_
@@ -225,7 +225,7 @@ _&ensp;&nbsp;*уменьшен функционал;_
 ##### &emsp;Ubuntu:
 - загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
-#### **Start property**
+#### **Properties**
 **-spas** - set server password (по умолчанию 1111); _**./FaNATClient.sh -spas 2227**_<br>
 **-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_<br>
 **-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_<br>
