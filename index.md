@@ -31,7 +31,7 @@
   	* [File sharing](#file-sharing)
   	* [Use Command line](#use-command-line)
 	* [Reverse SSH Tunneling](#reverse-ssh-tunneling)
-   	* [Use another available server](#use-another-available-server)
+ 	* [Use another available server](#use-another-available-server)
   * [**FaNAT-client-fv**](#fanat-client-fv)
 	* [Available](#available)
   	* [Установка](#install-1)
