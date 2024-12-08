@@ -15,7 +15,7 @@
 * настройка ssh-туннеля и доступ к устройству по ssh-протоколу;
 * развертывание на АРМ;
   
-<br>**Application was tested: х86-64 - Windows, Ubuntu; ARM - РасбериПи, НВидиа-ТХ2**
+<br>**Application was tested:** х86-64 - Windows, Ubuntu; ARM - РасбериПи, НВидиа-ТХ2
 
 ## Table of contents
 
