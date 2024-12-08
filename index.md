@@ -31,6 +31,7 @@
   	* [File sharing](#file-sharing)
   	* [Use Command line](#use-command-line)
 	* [Reverse SSH Tunneling](#reverse-ssh-tunneling)
+   	* [Use another available server](#use-another-available-server)
   * [**FaNAT-client-fv**](#fanat-client-fv)
 	* [Available](#available)
   	* [Установка](#install-1)
@@ -279,13 +280,14 @@ _<br>&ensp;&nbsp;*требуется незначительная установ
 ~~~
 _- создает обратный ssh-тоннель._
 
-<br>З сервера _**152.201.19.144**_ подключаемся к управляемому устройству(_**dev_target**_):
+<br>С сервера _**152.201.19.144**_ подключаемся к управляемому устройству(_**dev_target**_):
 ~~~
 #ssh dev_target@localhost -p 6744
 ~~~
 _- вводим пароль для **dev_target**._
 
-
+### Use another available server
+**Позволяет, <ins>ВРЕМЕННО</ins>, использовать уже настроенный сервер.**
 
 ## Installing additional software
 ### GStreamer for Windows
