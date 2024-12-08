@@ -189,7 +189,7 @@ _&ensp;&nbsp;*требуется установку дополнительног
 - загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
 #### **Start property**
-**-spas** - set server password (по умолчанию 1111); _**./FaNATServer.sh -spas 2227**_<br>
+**-spas** - set server password (по умолчанию 1111); _**./FaNATClient.sh -spas 2227**_<br>
 **-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_<br>
 **-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_<br>
 **-prtsp** - set port for публикации видео-потока; _**./FaNATClient.sh -prtsp 8554**_<br>
@@ -226,7 +226,7 @@ _&ensp;&nbsp;*уменьшен функционал;_
 - загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
 #### **Start property**
-**-spas** - set server password (по умолчанию 1111); _**./FaNATServer.sh -spas 2227**_<br>
+**-spas** - set server password (по умолчанию 1111); _**./FaNATClient.sh -spas 2227**_<br>
 **-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_<br>
 **-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_<br>
 **-log** - set ваш логин;  _**./FaNATClient.sh -log user1**_<br>
