@@ -16,7 +16,7 @@
 * развертывание на АРМ;
   
 <br>
-  Поддержка: х86-64 - Windows, Ubuntu; ARM - РасбериПи, НВидиа-ТХ2
+  Tested: х86-64 - Windows, Ubuntu; ARM - РасбериПи, НВидиа-ТХ2
 
 ## Table of contents
 
