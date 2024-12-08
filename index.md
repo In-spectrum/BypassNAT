@@ -27,7 +27,11 @@
 * [Video-server](#video-server)
 * [FaNAT-client](#fanat-client)
   * [Функции](#functions-1)
-  * [FaNAT-client](#fanat-client)
+  * [FaNAT-client-fv](#fanat-client-fv)
+	* [Available](#available)
+  	* [Установка](#install-1)
+		* [Windows](#windows)
+		* [Ubuntu](#ubuntu)
 
 ## FaNAT-server
 ### Functions
@@ -77,28 +81,34 @@
   - обмен файлами. Файлы сохраняются в Download folder;
   - консольный вариант для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.
 
-### FaNAT-client - фул-версия с пользовательским интерфейсом.
-_*Требуется установку дополнительного ПО - url_
-#### Доступно:
+### FaNAT-client-fv
+**Фул-версия с пользовательским интерфейсом.**<br>
+_*требуется установка [дополнительного ПО](#install-1)_
+
+#### Available:
 - поиск и управление устройствами в сети;
 - захват, трансляция, просмотр рабочего стола;
 - отправка сигналов мышки и клавиатуры;
 - эмуляцию сигналов мышки и клавиатуры;
 - отправка, выполнение инструкций в командной строке на управляемом устройстве и получение результата от него;
 - обмен файлами;
-- настройка качества видеопотока; 
-
-#### Установка 
+- настройка качества видеопотока;
+  
+#### Install 
 ##### Windows:
-- установите GStreamer(url)... - url. п.8.1.1;
-- загрузите архив приложения и разархивируйте его. Запустите FaNATClient.ехе
+- установите <a href="https://gstreamer.freedesktop.org/features/index.html" target="_blank">GStreamer</a> - url. п.8.1.1;
+- загрузите <a href="https://url" target="_blank">архив приложения</a> и разархивируйте его. Запустите **_FaNATClient.ехе_**
 
 ##### Ubuntu:
 - для отображения интерфейса и эмуляции сигналов клавиатуры:
-	# sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
-- установка GStreamer(url):
-	# sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
-- загрузите архив приложения (url) и разархивируйте его. В comandline запустите ./FaNATClient.sh
+```
+#sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
+```
+- дополнительные плагины <a href="https://gstreamer.freedesktop.org/features/index.html" target="_blank">GStreamer</a>:
+```
+#sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
+```
+- загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
 
 
