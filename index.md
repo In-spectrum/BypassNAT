@@ -142,7 +142,7 @@ _*требуется незначительная установка допол�
   
 #### **Install**
 ##### Windows:
-- наличие установленного кодека для просмотра видео;;
+- наличие установленного кодека для просмотра видео;
 - загрузите <a href="https://url" target="_blank">архив приложения</a> и разархивируйте его. Запустите **_FaNATClient.ехе_**
 
 ##### Ubuntu:
@@ -191,42 +191,15 @@ _*требуется установку дополнительного ПО_
 - загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
 #### **Start property**
-**-spas** - set server password (по умолчанию 1111);
-```
-   ./FaNATServer.sh -spas 2227
-```
-**-sip** - set port for connect to server;
-```
-   ./FaNATClient.sh -sip 137.34.15.27
-```
-**-ptcp** - set port for connect to server;
-```
-   ./FaNATClient.sh -ptcp 1135
-```
-**-prtsp** - set port for публикации видео-потока;
-```
-   ./FaNATClient.sh -prtsp 8554
-```
-**-prtmp** - set port for публикации видео-потока;
-```
-   ./FaNATClient.sh -prtmp 1927
-```
-**-log** - set ваш логин;
-```
-   ./FaNATClient.sh -log user1
-```
-**-pas** - set ваш пароль;
-```
-   ./FaNATClient.sh -pas user1111
-```
-**-ds** - использовать другой доступный сервер;
-```
-   ./FaNATClient.sh -ds 1
-```
-**-kds** - использовать другой доступный сервер c ключом доступа;
-```
-   ./FaNATClient.sh -ds 1 -kds ExxxRt17j
-```
+**-spas** - set server password (по умолчанию 1111); _**./FaNATServer.sh -spas 2227**_<br>
+**-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_<br>
+**-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_<br>
+**-prtsp** - set port for публикации видео-потока; _**./FaNATClient.sh -prtsp 8554**_<br>
+**-prtmp** - set port for публикации видео-потока;  _**./FaNATClient.sh -prtmp 1927**_<br>
+**-log** - set ваш логин;  _**./FaNATClient.sh -log user1**_<br>
+**-pas** - set ваш пароль;  _**./FaNATClient.sh -pas user1111**_<br>
+**-ds** - использовать другой доступный сервер;  _**./FaNATClient.sh -ds 1**_<br>
+**-kds** - использовать другой доступный сервер c ключом доступа;  _**./FaNATClient.sh -ds 1 -kds ExxxRt17j**_<br>
 
 
 
