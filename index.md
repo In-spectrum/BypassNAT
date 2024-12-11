@@ -303,7 +303,7 @@ _<br>&ensp;&nbsp;*не требуется установка дополните�
   
 ### Use Command line
 - use sudo - '**sudo 1111 ping localhost' or 'sudo password apt-get install App**'. 1111 - user password;
-- use ssh with password - '**sshpass -p 1111 ssh user_server@152.201.19.144**'. 1111 - user_server password;
+- use ssh with password - '**sshpass -p 1111 ssh user_server@0.0.0.0**'. 1111 - user_server password;
 - текущий каталог - '**cd**'. По умолчанию - home path;
 - перейти в каталог - '**cd ..**' или '**cd home/user_name/Video**' или '**cd D:/**';
 - вернуться в каталог "home path" - '**cd \~**';
@@ -313,21 +313,21 @@ _<br>&ensp;&nbsp;*не требуется установка дополните�
 ### Reverse SSH Tunneling
 **Позволяет запустить ssh-клиент с обратным тунелем и получить доступ к устройству (_dev_target_).**
 #### &ensp;&nbsp;Server requirements
-- сервер _**user_server@152.201.19.144**_ должен иметь **белый IP**;
-- на сервере _**user_server@152.201.19.144**_ должен быть доступен порт _**6744**_;
+- сервер _**user_server@0.0.0.0**_ должен иметь **белый IP**;
+- на сервере _**user_server@0.0.0.0**_ должен быть доступен порт _**6744**_;
 
 #### &emsp;Создаем обратный ssh-тоннель
 &emsp;Используя FaNATClient - Menu - Comand line - отправляем команду на управляемое устройсво _**dev_target**_
 ~~~
-#sshpass -p password_user_server ssh -o StrictHostKeyChecking=accept-new user_server@152.201.19.144 -R 6744:localhost:22
+#sshpass -p password_user_server ssh -o StrictHostKeyChecking=accept-new user_server@0.0.0.0 -R 6744:localhost:22
 ~~~
 &emsp;***password_user_server** - _it's password of user_server_
 <br><br>&emsp;... или отправляем команду с ключем
 ~~~
-#ssh  -i /home/dev_target/folderKey/ssh-key-2020-11-09.key user_server@152.201.19.144 -R 6744:localhost:22
+#ssh  -i /home/dev_target/folderKey/ssh-key-2020-11-09.key user_server@0.0.0.0 -R 6744:localhost:22
 ~~~
 
-<br>&emsp;С сервера _**user_server@152.201.19.144**_ подключаемся к устройству _**dev_target**_
+<br>&emsp;С сервера _**user_server@0.0.0.0**_ подключаемся к устройству _**dev_target**_
 ~~~
 #ssh dev_target@localhost -p 6744
 ~~~
