@@ -73,7 +73,6 @@
 
 ### Specifications
 - установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента [**FaNAT-client-lite**](#fanat-client-lite) или [**FaNAT-client-console-lite**](#fanat-client-console-lite);
-- установка видео-сервера нужна, если планируете делать захват(трансляцию) рабочего стола - используется версия клиента [**FaNAT-client-fv**](#fanat-client-fv) и [**FaNAT-client-console-fv**](#fanat-client-console-fv);
 
 ## FaNAT-server
 ### Functions
