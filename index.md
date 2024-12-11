@@ -24,6 +24,7 @@
   * [Функции](#functions)
   * [Установка](#install)
   * [Параметры запуска](#properties)
+  * [Example script to start the server](#example-script-to-start-the-server)
 * [**FaNAT-client**](#fanat-client)
   * [Функции](#functions-1)
   * [Exemples](#exemples-1)
@@ -88,6 +89,11 @@
 **-la** - время для отключения клиентов с низкой активность; _**./FaNATServer.sh -la 60**_<br>
 _<h style="font-size:8; ">&emsp;&emsp;&emsp;*если клиент подключён и не используется - он будет отключен от сервера через 60сек.<br>
 &emsp;&emsp;&emsp;&ensp;Через 30сек. клиент переподключится к серверу для повторной идентификации в сети.</h>_
+
+### Example script to start the server
+~~~
+file.sh
+~~~
 
 ## **FaNAT-client**
 ### Functions  
