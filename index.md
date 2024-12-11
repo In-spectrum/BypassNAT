@@ -24,7 +24,7 @@
   * [Функции](#functions)
   * [Установка](#install)
   * [Параметры запуска](#properties)
-  * [Example script to start the server](#example-script-to-start-the-server)
+  * [Example script to start FaNATA-server](#example-script-to-start-fanat-server)
 * [**FaNAT-client**](#fanat-client)
   * [Функции](#functions-1)
   * [Exemples](#exemples-1)
