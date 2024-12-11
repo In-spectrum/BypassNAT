@@ -91,8 +91,47 @@ _<h style="font-size:8; ">&emsp;&emsp;&emsp;*если клиент подклю�
 &emsp;&emsp;&emsp;&ensp;Через 30сек. клиент переподключится к серверу для повторной идентификации в сети.</h>_
 
 ### Example script to start the server
+
 ~~~
-file.sh
+#!/bin/bash
+
+sleep 10
+
+a_pFNS_tcp=1137 #for FaNatServer
+a_pRTSP=8554 #for RTSP
+a_pRTMP=1927 #for RTMP
+
+
+sudo systemctl start firewalld
+sudo firewall-cmd --zone=public --add-port=${a_pRTSP}/tcp --permanent #for RTSP
+sudo firewall-cmd --zone=public --add-port=${a_pRTMP}/tcp --permanent #for RTMP
+sudo firewall-cmd --zone=public --add-port=${a_pFNS_tcp}/tcp --permanent #for FaNatServer
+sudo firewall-cmd --reload
+
+while true
+do
+    # FaNatServer check
+    if pgrep "FaNatServer" > /dev/null; then
+        echo "FaNatServer STARTED!"
+    else
+        echo "FaNatServer NOT STARTED"
+
+        cd /home/user/FaNatServer
+        ./FaNatServer.sh -p ${a_pFNS_tcp} &
+    fi
+
+    # Mediamtx check
+    if pgrep "mediamtx" > /dev/null; then
+        echo "RTSP-server STARTED!"
+    else
+        echo "RTSP-server NOT STARTED"
+
+        cd /home/user/Mediamtx
+        MTX_RTSPADDRESS=":${a_pRTSP}" MTX_RTMPADDRESS=":${a_pRTMP}" MTX_PROTOCOLS="tcp,udp" ./mediamtx &
+    fi
+
+    sleep 2
+done
 ~~~
 
 ## **FaNAT-client**
