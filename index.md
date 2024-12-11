@@ -58,7 +58,8 @@
 		* [Ubuntu](#ubuntu-3)
    	* [Параметры запуска](#properties-2)
 * [**Installing additional software**](#installing-additional-software)
-   * [GStreamer for Windows](#gstreamer-for-windows) 
+   * [GStreamer for Windows](#gstreamer-for-windows)
+* [**License**](#license)
 
 ## Video-server
  _&ensp;&nbsp;*используется сторонне ПО_<br>
@@ -342,3 +343,6 @@ _<br>&ensp;&nbsp;*не требуется установка дополните�
 - запустите их с правами администратора;
 - при установке **выберите все плагины**;
 - add 'C:\gstreamer\1.0\mingw_x86_64\bin\' to **PATH** system;
+
+## License
+text
