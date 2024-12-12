@@ -350,4 +350,7 @@ done
 - установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента [**FaNAT-client-lite**](#fanat-client-lite) или [**FaNAT-client-console-lite**](#fanat-client-console-lite);
 
 ## License
-text1
+Увесь код у цьому репозиторії випущено згідно з <a href="https://github.com/In-spectrum/FaNAT/blob/main/LICENSE">ліцензією MIT</a>. 
+<br>Архіви додатків та зкомпільовані двійкові файли використовують деякі сторонні залежності:
+- Qt - the primary <a href="https://www.qt.io/licensing/open-source-lgpl-obligations#lgpl" target="_blank">open-source license</a> is the GNU Lesser General Public License v.3 <a href="https://www.gnu.org/licenses/lgpl-3.0.txt" target="_blank">“LGPL v3”</a>;
+- GStreamer - <a href="https://github.com/GStreamer/gstreamer/tree/main?tab=License-1-ov-file#" target="_blank">licensed under the LGPL v2.1;
