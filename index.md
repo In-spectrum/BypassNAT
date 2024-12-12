@@ -360,4 +360,4 @@ done
 Увесь код у цьому репозиторії випущено згідно з <a href="https://github.com/In-spectrum/FaNAT/blob/main/LICENSE">ліцензією MIT</a>. 
 <br>Архіви додатків та зкомпільовані двійкові файли використовують деякі сторонні залежності:
 - Qt - the primary <a href="https://www.qt.io/licensing/open-source-lgpl-obligations#" target="_blank">open-source license</a> is the GNU Lesser General Public License v.3 <a href="https://www.gnu.org/licenses/lgpl-3.0.txt" target="_blank">“LGPL v3”</a>;
-- GStreamer - <a href="https://github.com/GStreamer/gstreamer/tree/main?tab=License-1-ov-file#" target="_blank">licensed under the LGPL v2.1;
+- GStreamer - <a href="https://github.com/GStreamer/gstreamer/blob/main/LICENSE" target="_blank">licensed under the LGPL v2.1;
