@@ -1,5 +1,5 @@
 <h1 align="center">
-	<a href="https://github.com/In-spectrum/FaNAT">
+	<a href="https://github.com/In-spectrum/FaNAT" target="_blank">
 		<img src="manual/images/baner.bmp" width="750" height="250">
 	</a>
 	<br>
