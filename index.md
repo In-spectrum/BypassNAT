@@ -23,12 +23,12 @@
 
 * [**FaNAT-client**](#fanat-client)
   * [Функции](#functions)
+  * [Compile from source](#compile-from-source)
   * [Exemples](#exemples-1)
   	* [File sharing](#file-sharing)
   	* [Use Command line](#use-command-line)
 	* [Reverse SSH Tunneling](#reverse-ssh-tunneling)
 	* [Use another available server](#use-another-available-server)
-  * [Compile from source](#compile-from-source)
   * [**FaNAT-client-fv**](#fanat-client-fv)
 	* [Available](#available)
   	* [Установка](#install)
@@ -76,12 +76,13 @@
   <br>&emsp;&nbsp;- exchange of clipboards;
   <br>&emsp;&nbsp;- консольный вариант для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.
     
-### &emsp;[Exemples](#exemples-1)
 ### &emsp;Compile from source
  &emsp;&nbsp;- install git and Qt (v.6.5.3 and v.5.15.2, Qt Creator v.14.0.1);
  <br>&emsp;&nbsp;- clone this repository and enter into the folder;
  <br>&emsp;&nbsp;- open file *.pro in Qt Creator;
  <br>&emsp;&nbsp;- run the project;
+
+### &emsp;[Exemples](#exemples-1)
 
 ### FaNAT-client-fv
 **Фул-версия.**<br>
