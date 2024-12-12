@@ -78,7 +78,7 @@
     
 ### &emsp;Compile from source
  &emsp;&nbsp;- install git and Qt (v.6.5.3 and v.5.15.2, Qt Creator v.14.0.1);
- <br>&emsp;&nbsp;- clone this repository and enter into the folder;
+ <br>&emsp;&nbsp;- clone <a href="https://github.com/In-spectrum/FaNAT" target="_blank">the FaNAT repository</a> and enter into the folder;
  <br>&emsp;&nbsp;- open file *.pro in Qt Creator;
  <br>&emsp;&nbsp;- run the project;
 
