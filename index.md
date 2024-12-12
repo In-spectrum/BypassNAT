@@ -28,6 +28,7 @@
   	* [Use Command line](#use-command-line)
 	* [Reverse SSH Tunneling](#reverse-ssh-tunneling)
 	* [Use another available server](#use-another-available-server)
+  * [Compile from source](#compile-from-source)
   * [**FaNAT-client-fv**](#fanat-client-fv)
 	* [Available](#available)
   	* [Установка](#install)
@@ -65,17 +66,22 @@
 
 
 ## **FaNAT-client**
-### Functions  
-  - захват, трансляция, просмотр рабочего стола (RTSP, RTMP-поток);
-  - отправка, эмуляция сигналов мышки и клавиатуры;
-  - использование командной строки на управляемом устройстве. [Use Command line](#use-command-line);
-  - возможность запустить ssh-клиент с обратным туннелем и получить доступ к устройству по ssh-протоколу.
-<br>[Reverse SSH Tunneling](#reverse-ssh-tunneling);
-  - обмен файлами. Файлы сохраняются в **Download** folder. [File sharing](#file-sharing);
-  - exchange of clipboards;
-  - консольный вариант для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.
+### &emsp;Functions  
+  &emsp;&nbsp;- захват, трансляция, просмотр рабочего стола (RTSP, RTMP-поток);
+  <br>&emsp;&nbsp;- отправка, эмуляция сигналов мышки и клавиатуры;
+  <br>&emsp;&nbsp;- использование командной строки на управляемом устройстве. [Use Command line](#use-command-line);
+  <br>&emsp;&nbsp;- возможность запустить ssh-клиент с обратным туннелем и получить доступ к устройству по ssh-протоколу.
+  <br>&emsp;&nbsp;&ensp;&nbsp;[Reverse SSH Tunneling](#reverse-ssh-tunneling);
+  <br>&emsp;&nbsp;- обмен файлами. Файлы сохраняются в **Download** folder. [File sharing](#file-sharing);
+  <br>&emsp;&nbsp;- exchange of clipboards;
+  <br>&emsp;&nbsp;- консольный вариант для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.
     
-### [Exemples](#exemples-1)
+### &emsp;[Exemples](#exemples-1)
+### &emsp;Compile from source
+ &emsp;&nbsp;- install git and Qt (v.6.5.3 and v.5.15.2, Qt Creator v.14.0.1);
+ <br>&emsp;&nbsp;- clone this repository and enter into the folder;
+ <br>&emsp;&nbsp;- open file *.pro in Qt Creator;
+ <br>&emsp;&nbsp;- run the project;
 
 ### FaNAT-client-fv
 **Фул-версия.**<br>
