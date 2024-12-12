@@ -350,4 +350,4 @@ done
 - установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента [**FaNAT-client-lite**](#fanat-client-lite) или [**FaNAT-client-console-lite**](#fanat-client-console-lite);
 
 ## License
-text
+text1
