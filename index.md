@@ -21,12 +21,6 @@
 
 ## Table of contents
 
-* [**Video-server**](#video-server)
-* [**FaNAT-server**](#fanat-server)
-  * [Функции](#functions)
-  * [Установка](#install)
-  * [Параметры запуска](#properties)
-  * [Example script to check FaNATA-server](#example-script-to-check-fanat-server)
 * [**FaNAT-client**](#fanat-client)
   * [Функции](#functions-1)
   * [Exemples](#exemples-1)
@@ -61,80 +55,14 @@
   	* [Параметры запуска](#properties-2)
 * [**Installing additional software**](#installing-additional-software)
    * [GStreamer for Windows](#gstreamer-for-windows)
+* [**FaNAT-server**](#fanat-server)
+  * [Функции](#functions)
+  * [Установка](#install)
+  * [Параметры запуска](#properties)
+  * [Example script to check FaNATA-server](#example-script-to-check-fanat-server)
+* [**Video-server**](#video-server)
 * [**License**](#license)
 
-## Video-server
- _&ensp;&nbsp;*используется сторонне ПО_<br>
- 
-### Features
-Публикация и трансляция видеопотока рабочего стола управляемого устройства.
-
-### Пример
-- <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">mediamtx</a> - доступно RTSP, RTMP.... протоколы;
-- <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-video-streaming-server-using-nginx-rtmp-on-ubuntu-20-04" target="_blank">Nginx-RTMP</a> - доступно RTMP-протокол;
-- или другой RTSP, RTMP сервер;
-
-### Specifications
-- установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента [**FaNAT-client-lite**](#fanat-client-lite) или [**FaNAT-client-console-lite**](#fanat-client-console-lite);
-
-## FaNAT-server
-### Functions
-- поиск доступных устройств и обмен данными между ними;
-   
-### Install
- - загрузите архив приложения  соответствующий вашей ОС и разархивируйте. Url;
- - запустите сервер: **_./FaNATServer.sh_** - для Ubuntu или **_FaNATServer.ехе_** - для Windows;
-
-### Properties
-**-pas** - set server password (по умолчанию 1111); _**./FaNATServer.sh -pas 2227**_<br>
-**-p** - set listen port; _**./FaNATServer.sh -p 1675**_<br>
-**-la** - время для отключения клиентов с низкой активность; _**./FaNATServer.sh -la 60**_<br>
-_<h style="font-size:8; ">&emsp;&emsp;&emsp;*если клиент подключён и не используется - он будет отключен от сервера через 60сек.<br>
-&emsp;&emsp;&emsp;&ensp;Через 30сек. клиент переподключится к серверу для повторной идентификации в сети.</h>_
-
-### Example script to check FaNAT-server
-
-~~~
-#!/bin/bash
-
-sleep 10
-
-a_pFNS_tcp=1137 #for FaNatServer
-a_pRTSP=8554 #for RTSP
-a_pRTMP=1927 #for RTMP
-
-
-sudo systemctl start firewalld
-sudo firewall-cmd --zone=public --add-port=${a_pRTSP}/tcp --permanent #for RTSP
-sudo firewall-cmd --zone=public --add-port=${a_pRTMP}/tcp --permanent #for RTMP
-sudo firewall-cmd --zone=public --add-port=${a_pFNS_tcp}/tcp --permanent #for FaNatServer
-sudo firewall-cmd --reload
-
-while true
-do
-    # FaNatServer check
-    if pgrep "FaNatServer" > /dev/null; then
-        echo "FaNatServer STARTED!"
-    else
-        echo "FaNatServer NOT STARTED"
-
-        cd /home/user/FaNatServer
-        ./FaNatServer.sh -p ${a_pFNS_tcp} &
-    fi
-
-    # Mediamtx check
-    if pgrep "mediamtx" > /dev/null; then
-        echo "RTSP-server STARTED!"
-    else
-        echo "RTSP-server NOT STARTED"
-
-        cd /home/user/Mediamtx
-        MTX_RTSPADDRESS=":${a_pRTSP}" MTX_RTMPADDRESS=":${a_pRTMP}" MTX_PROTOCOLS="tcp,udp" ./mediamtx &
-    fi
-
-    sleep 2
-done
-~~~
 
 ## **FaNAT-client**
 ### Functions  
@@ -347,6 +275,79 @@ _<br>&ensp;&nbsp;*не требуется установка дополните�
 - запустите их с правами администратора;
 - при установке **выберите все плагины**;
 - add 'C:\gstreamer\1.0\mingw_x86_64\bin\' to **PATH** system;
+
+## FaNAT-server
+### Functions
+- поиск доступных устройств и обмен данными между ними;
+   
+### Install
+ - загрузите архив приложения  соответствующий вашей ОС и разархивируйте. Url;
+ - запустите сервер: **_./FaNATServer.sh_** - для Ubuntu или **_FaNATServer.ехе_** - для Windows;
+
+### Properties
+**-pas** - set server password (по умолчанию 1111); _**./FaNATServer.sh -pas 2227**_<br>
+**-p** - set listen port; _**./FaNATServer.sh -p 1675**_<br>
+**-la** - время для отключения клиентов с низкой активность; _**./FaNATServer.sh -la 60**_<br>
+_<h style="font-size:8; ">&emsp;&emsp;&emsp;*если клиент подключён и не используется - он будет отключен от сервера через 60сек.<br>
+&emsp;&emsp;&emsp;&ensp;Через 30сек. клиент переподключится к серверу для повторной идентификации в сети.</h>_
+
+### Example script to check FaNAT-server
+
+~~~
+#!/bin/bash
+
+sleep 10
+
+a_pFNS_tcp=1137 #for FaNatServer
+a_pRTSP=8554 #for RTSP
+a_pRTMP=1927 #for RTMP
+
+
+sudo systemctl start firewalld
+sudo firewall-cmd --zone=public --add-port=${a_pRTSP}/tcp --permanent #for RTSP
+sudo firewall-cmd --zone=public --add-port=${a_pRTMP}/tcp --permanent #for RTMP
+sudo firewall-cmd --zone=public --add-port=${a_pFNS_tcp}/tcp --permanent #for FaNatServer
+sudo firewall-cmd --reload
+
+while true
+do
+    # FaNatServer check
+    if pgrep "FaNatServer" > /dev/null; then
+        echo "FaNatServer STARTED!"
+    else
+        echo "FaNatServer NOT STARTED"
+
+        cd /home/user/FaNatServer
+        ./FaNatServer.sh -p ${a_pFNS_tcp} &
+    fi
+
+    # Mediamtx check
+    if pgrep "mediamtx" > /dev/null; then
+        echo "RTSP-server STARTED!"
+    else
+        echo "RTSP-server NOT STARTED"
+
+        cd /home/user/Mediamtx
+        MTX_RTSPADDRESS=":${a_pRTSP}" MTX_RTMPADDRESS=":${a_pRTMP}" MTX_PROTOCOLS="tcp,udp" ./mediamtx &
+    fi
+
+    sleep 2
+done
+~~~
+
+## Video-server
+ _&ensp;&nbsp;*используется сторонне ПО_<br>
+ 
+### Features
+Публикация и трансляция видеопотока рабочего стола управляемого устройства.
+
+### Пример
+- <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">mediamtx</a> - доступно RTSP, RTMP.... протоколы;
+- <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-video-streaming-server-using-nginx-rtmp-on-ubuntu-20-04" target="_blank">Nginx-RTMP</a> - доступно RTMP-протокол;
+- или другой RTSP, RTMP сервер;
+
+### Specifications
+- установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента [**FaNAT-client-lite**](#fanat-client-lite) или [**FaNAT-client-console-lite**](#fanat-client-console-lite);
 
 ## License
 text
