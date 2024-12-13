@@ -3,7 +3,9 @@
 		<img src="manual/images/baner.bmp" width="750" height="250">
 	</a>
 	<br>
-	Система удаленного доступа к устройствам.
+	<a href="https://github.com/In-spectrum/FaNAT" target="_blank">
+		Система удаленного доступа к устройствам
+	</a>
 </h1>
 
 <br>
