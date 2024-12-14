@@ -31,6 +31,7 @@
   	* [Use Command line](#use-command-line)
 	* [Reverse SSH Tunneling](#reverse-ssh-tunneling)
 	* [Use another available server](#use-another-available-server)
+	* [Commands for the server](#commands-for-the-server)
   * [**FaNAT-client-fv**](#fanat-client-fv)
 	* [Available](#available)
   	* [Установка](#install)
@@ -281,9 +282,12 @@ _<br>&ensp;&nbsp;*не требуется установка дополните�
 ~~~
 # ./FaNATClient.sh -sip 158.101.219.244 -log user1 -pas user1111 -ds 1 -kds ExxxRt37j2
 ~~~
-&emsp;**- в версии приложения с интерфейсом пользователя:**
- выберите Menu -> Server -> **use the developer server** -> введите **158.101.219.244** -> _( не обязательно: введите **key** )_ -> New connect;
+&emsp;**- в версии приложения с интерфейсом пользователя:** выберите Menu -> Server -> **use the developer server** -> введите **158.101.219.244** -> _( не обязательно: введите **key** )_ -> New connect;
 
+### Commands for the server
+- установка времени для [отключения клиентов с низкой активность](#properties-2): значения от 30 до 300сек.
+<br>( _0 - деактивирует функцию на сервере_ );
+  
 ## Installing additional software
 ### GStreamer for Windows
 - загрузите установочные файлы: <a href="https://gstreamer.freedesktop.org/data/pkg/windows/1.20.7/mingw/" target="_blank">gstreamer-1.0-mingw-x86_64-1.20.7.msi и gstreamer-1.0-devel-mingw-x86_64-1.20.7.msi</a>;
@@ -297,7 +301,9 @@ _<br>&ensp;&nbsp;*не требуется установка дополните�
    
 ### Install
  - загрузите архив приложения  соответствующий вашей ОС и разархивируйте. Url;
- - запустите сервер с входними параметрами: **_./FaNATServer.sh -pas 2227 -p 1675 -la 60_** - для Ubuntu или **_FaNATServer.ехе -pas 2227 -p 1675 -la 60_** - для Windows;
+ - запустите сервер с входними параметрами:
+<br>**_./FaNATServer.sh -pas 2227 -p 1675 -la 60_** - для Ubuntu
+<br>**_FaNATServer.ехе -pas 2227 -p 1675 -la 60_** - для Windows;
 
 ### Properties
 **-pas** - set server password (по умолчанию 1111); _**./FaNATServer.sh -pas 2227**_<br>
