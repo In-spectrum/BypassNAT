@@ -19,7 +19,7 @@
 * настройка ssh-туннеля и доступ к устройству по ssh-протоколу;
 * развертывание на АРМ;
   
-<br>**Application was tested:** х86-64 - Windows, Ubuntu; ARM - РасбериПи, НВидиа-ТХ2
+<br>**Application was tested:** Windows 10, Ubuntu 21;
 
 ## Table of contents
 
@@ -188,15 +188,15 @@ _&ensp;&nbsp;*требуется установка дополнительног
 - загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
 #### **Properties**
-**-spas** - set server password (по умолчанию 1111); _**./FaNATClient.sh -spas 2227**_<br>
-**-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_<br>
-**-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_<br>
-**-prtsp** - set port for публикации видео-потока; _**./FaNATClient.sh -prtsp 8554**_<br>
-**-prtmp** - set port for публикации видео-потока;  _**./FaNATClient.sh -prtmp 1927**_<br>
-**-log** - set ваш логин;  _**./FaNATClient.sh -log user1**_<br>
-**-pas** - set ваш пароль;  _**./FaNATClient.sh -pas user1111**_<br>
-**-ds** - использовать другой доступный сервер;  _**./FaNATClient.sh -ds 1**_<br>
-**-kds** - использовать другой доступный сервер c ключом доступа;  _**./FaNATClient.sh -ds 1 -kds ExxxRt17j**_
+ **-spas** - set server password (по умолчанию 1111); _**./FaNATClient.sh -spas 2227**_
+<br> **-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_
+<br> **-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_
+<br> **-prtsp** - set port for публикации видео-потока; _**./FaNATClient.sh -prtsp 8554**_
+<br> **-prtmp** - set port for публикации видео-потока;  _**./FaNATClient.sh -prtmp 1927**_
+<br> **-log** - set ваш логин;  _**./FaNATClient.sh -log user1**_
+<br> **-pas** - set ваш пароль;  _**./FaNATClient.sh -pas user1111**_
+<br> **-ds** - использовать другой доступный сервер;  _**./FaNATClient.sh -ds 1**_ [Use another available server](#use-another-available-server)
+<br> **-kds** - использовать другой доступный сервер c ключом доступа;  _**./FaNATClient.sh -ds 1 -kds ExxxRt17j**_ [Use another available server](#use-another-available-server)
 
 ### **FaNAT-client-console-lite**
 **Console application. Для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.**<br>
@@ -226,13 +226,13 @@ _<br>&ensp;&nbsp;*не требуется установка дополните�
 - загрузите <a href="https://url" target="_blank">архив приложения</a>. В Command Line запустите **_./FaNATClient.sh_**
 
 #### **Properties**
-**-spas** - set server password (по умолчанию 1111); _**./FaNATClient.sh -spas 2227**_<br>
-**-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_<br>
-**-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_<br>
-**-log** - set ваш логин;  _**./FaNATClient.sh -log user1**_<br>
-**-pas** - set ваш пароль;  _**./FaNATClient.sh -pas user1111**_<br>
-**-ds** - использовать другой доступный сервер;  _**./FaNATClient.sh -ds 1**_<br>
-**-kds** - использовать другой доступный сервер c ключом доступа;  _**./FaNATClient.sh -ds 1 -kds ExxxRt17j**_<br>
+ **-spas** - set server password (по умолчанию 1111); _**./FaNATClient.sh -spas 2227**_
+<br> **-sip** - set port for connect to server;  _**./FaNATClient.sh -sip 137.34.15.27**_
+<br> **-ptcp** - set port for connect to server;  _**./FaNATClient.sh -ptcp 1135**_
+<br> **-log** - set ваш логин;  _**./FaNATClient.sh -log user1**_
+<br> **-pas** - set ваш пароль;  _**./FaNATClient.sh -pas user1111**_
+<br> **-ds** - использовать другой доступный сервер;  _**./FaNATClient.sh -ds 1**_ [Use another available server](#use-another-available-server)
+<br> **-kds** - использовать другой доступный сервер c ключом доступа;  _**./FaNATClient.sh -ds 1 -kds ExxxRt17j**_ [Use another available server](#use-another-available-server)
 
 ## Exemples
 
@@ -258,25 +258,31 @@ _<br>&ensp;&nbsp;*не требуется установка дополните�
 #### &emsp;Создаем обратный ssh-тоннель
 &emsp;Используя FaNATClient - Menu - Comand line - отправляем команду на управляемое устройсво _**dev_target**_
 ~~~
-#sshpass -p password_user_server ssh -o StrictHostKeyChecking=accept-new user_server@0.0.0.0 -R 6744:localhost:22
+# sshpass -p password_user_server ssh -o StrictHostKeyChecking=accept-new user_server@0.0.0.0 -R 6744:localhost:22
 ~~~
 &emsp;***password_user_server** - _it's password of user_server_
 <br><br>&emsp;... или отправляем команду с ключем
 ~~~
-#ssh  -i /home/dev_target/folderKey/ssh-key-2020-11-09.key user_server@0.0.0.0 -R 6744:localhost:22
+# ssh  -i /home/dev_target/folderKey/ssh-key-2020-11-09.key user_server@0.0.0.0 -R 6744:localhost:22
 ~~~
 
 <br>&emsp;С сервера _**user_server@0.0.0.0**_ подключаемся к устройству _**dev_target**_
 ~~~
-#ssh dev_target@localhost -p 6744
+# ssh dev_target@localhost -p 6744
 ~~~
 &emsp;&nbsp;_- enter password of **dev_target**._
 
 ### Use another available server
-**Позволяет, <ins>ВРЕМЕННО</ins>, использовать уже настроенный сервер.**
+**Позволяет, <ins>ВРЕМЕННО</ins>, использовать уже настроенный сервер _158.101.219.244_**
 <br>
-<br>
-<br>
+<br>Время использования стороннего сервера (_без ключа доступа_) составляет **10мин**. Далее, сервер недоступен на протяжении **30мин**. Далее, снова, можна пользоваться сервером на протяжении **10мин**. И так далее...
+<br>Ключ доступа дает возможность использовать сторонний сервер дольше ( _до определенной даты - время оговаривается дополнительно_ ).
+<br>&emsp;**- для консольной версии приложения:**
+~~~
+# ./FaNATClient.sh -sip 158.101.219.244 -log user1 -pas user1111 -ds 1 -kds ExxxRt37j2
+~~~
+&emsp;**- в версии приложения с интерфейсом пользователя:**
+<br>&emsp;&ensp;&nbsp;выберите Меню-> Сервер-> 'use the developer server', введите 158.101.219.244,  введите key ( не обязатеьно );
 
 ## Installing additional software
 ### GStreamer for Windows
