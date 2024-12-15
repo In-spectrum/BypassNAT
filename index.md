@@ -66,6 +66,9 @@
   * [Параметры запуска](#properties-2)
   * [Example script to check FaNATA-server](#example-script-to-check-fanat-server)
 * [**Video-server**](#video-server)
+  * [Функции](#функции)
+  * [Пример](#пример)
+  * [Особенности](#особенности-1)
 * [**License**](#license)
 
 
