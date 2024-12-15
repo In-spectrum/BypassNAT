@@ -372,7 +372,7 @@ done
 - <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-video-streaming-server-using-nginx-rtmp-on-ubuntu-20-04" target="_blank">Nginx-RTMP</a> - доступно RTMP-протокол;
 - или другой RTSP, RTMP сервер;
 
-### Specifications
+### Особенности
 - установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента [**FaNAT-client-lite**](#fanat-client-lite) или [**FaNAT-client-console-lite**](#fanat-client-console-lite);
 
 ## License
