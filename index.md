@@ -376,7 +376,8 @@ done
 - или другой RTSP, RTMP сервер;
 
 ### Особенности
-- установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента [**FaNAT-client-lite**](#fanat-client-lite) или [**FaNAT-client-console-lite**](#fanat-client-console-lite);
+- установка видео-сервера не нужна, если на управляемом устройстве используется версия клиента
+<br>[**FaNAT-client-lite**](#fanat-client-lite) или [**FaNAT-client-console-lite**](#fanat-client-console-lite);
 
 ## License
 Увесь код у цьому репозиторії випущено згідно з <a href="https://github.com/In-spectrum/FaNAT/blob/main/LICENSE">ліцензією MIT</a>. 
