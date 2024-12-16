@@ -84,7 +84,7 @@
   <br>&emsp;&nbsp;- консольный вариант для использования в ваших приложениях или как дополнительная служба поддержки при запуске устройства.
     
 ### &emsp;Compile from source
- &emsp;&nbsp;- install <a href="https://git-scm.com/downloads" target="_blank">git</a> and <a href="https://doc.qt.io/qt-6/get-and-install-qt.html" target="_blank">Qt</a> (v.6.5.3 and v.5.15.2, Qt Creator v.14.0.1);
+ &emsp;&nbsp;- install <a href="https://git-scm.com/downloads" target="_blank">git</a> and <a href="https://doc.qt.io/qt-6/get-and-install-qt.html" target="_blank">Qt</a> (v.6.7.3 and v.5.15.2, Qt Creator v.14.0.1);
  <br>&emsp;&nbsp;- clone <a href="https://github.com/In-spectrum/FaNAT" target="_blank">the FaNAT repository</a> and enter into the folder;
  <br>&emsp;&nbsp;- open file *.pro in the Qt Creator;
  <br>&emsp;&nbsp;- run the project;
