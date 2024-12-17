@@ -331,7 +331,7 @@ sleep 10
 a_pFNS_tcp=1137 #for FaNatServer
 a_pRTSP=8554 #for RTSP
 a_pRTMP=1927 #for RTMP
-a_pSSH=5456 #for SSH
+a_pSSH=6744 #for SSH
 
 # opening of ports
 sudo systemctl start firewalld
