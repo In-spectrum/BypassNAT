@@ -331,9 +331,11 @@ sleep 10
 a_pFNS_tcp=1137 #for FaNatServer
 a_pRTSP=8554 #for RTSP
 a_pRTMP=1927 #for RTMP
+a_pSSH=5456 #for SSH
 
 # opening of ports
 sudo systemctl start firewalld
+sudo firewall-cmd --zone=public --add-port=${a_pSSH}/tcp --permanent #for SSH
 sudo firewall-cmd --zone=public --add-port=${a_pRTSP}/tcp --permanent #for RTSP
 sudo firewall-cmd --zone=public --add-port=${a_pRTMP}/tcp --permanent #for RTMP
 sudo firewall-cmd --zone=public --add-port=${a_pFNS_tcp}/tcp --permanent #for FaNatServer
