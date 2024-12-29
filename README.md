@@ -68,7 +68,7 @@
   * [Features](#features)
   * [Properties](#properties-2)
   * [Install](#install-4)
-  * [Example script to check BypassNATA-server](#example-script-to-check-bypassnat-server)
+  * [Example script to check BypassNAT-server](#example-script-to-check-bypassnat-server)
 * [**Video-server**](#video-server)
   * [Functions](#functions-2)
   * [Exemple](#exemple)
@@ -90,6 +90,7 @@
 ### &emsp;Compile from source
  &emsp;&nbsp;- install <a href="https://git-scm.com/downloads" target="_blank">git</a> and <a href="https://doc.qt.io/qt-6/get-and-install-qt.html" target="_blank">Qt</a> (v.6.7.3 or v.5.15.2, Qt Creator v.14.0.1);
  <br>&emsp;&nbsp;- clone <a href="https://github.com/In-spectrum/BypassNAT" target="_blank">the BypassNAT repository</a> and go to the **'src'** folder;
+ <br>&emsp;&nbsp;- select **'main'** or  **'console-lite'** branch;
  <br>&emsp;&nbsp;- open file ***.pro** in the Qt Creator;
  <br>&emsp;&nbsp;- run the project;
 
@@ -245,7 +246,7 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 ## Exemples
 
 ### File sharing
-- use BypassNAT-client - Menu - File copy;
+- use BypassNatClient - Menu - File copy;
 - insert the full path to the file. Exemple: /home/user/folderKey/ssh-key-2020-11-09.key;
 - click the button to copy the file;
   
