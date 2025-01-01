@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="CCFAuGwcZXEMpt4v_DYYzUJ-grO_j04rt8HWxYH_GJg" />
 <h1 align="center">
 	<a href="https://github.com/In-spectrum/BypassNAT" target="_blank">
 		<img src="manual/images/baner.png" width="750" height="250">
