@@ -1,6 +1,7 @@
+
 <h1 align="center">
 	<a href="https://github.com/In-spectrum/BypassNAT" target="_blank">
-		<img src="manual/images/baner.png" width="750" height="250">
+		<img src="manual/images/baner.png" width="750" height="250" alt='BypassNAT | System for remote access to devices.' >
 	</a>
 	<br>
 	<a href="https://github.com/In-spectrum/BypassNAT" target="_blank">
