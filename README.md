@@ -1,4 +1,3 @@
-
 <h1 align="center">
 	<a href="https://github.com/In-spectrum/BypassNAT" target="_blank">
 		<img src="manual/images/baner.png" width="750" height="250" alt='BypassNAT | System for remote access to devices.' >
@@ -42,18 +41,21 @@
 	* [Install](#install)
 		* [Windows](#windows)
 		* [Ubuntu](#ubuntu)
+		* [Raspberry Pi](#raspberry-pi)
   * [**BypassNAT-client-lite**](#bypassnat-client-lite)
 	* [Available](#available-1)
 	* [Unavailable](#unavailable)
 	* [Install](#install-1)
 		* [Windows](#windows-1)
 		* [Ubuntu](#ubuntu-1)
+		* [Raspberry Pi](#raspberry-pi-1)
   * [**BypassNAT-client-console-fv**](#bypassnat-client-console-fv)
 	* [Available](#available-2)
 	* [Unavailable](#unavailable-1)
 	* [Install](#install-2)
 		* [Windows](#windows-2)
 		* [Ubuntu](#ubuntu-2)
+		* [Raspberry Pi](#raspberry-pi-2)
 	* [Properties](#properties)
   * [**BypassNAT-client-console-lite**](#bypassnat-client-console-lite)
 	* [Available](#available-3)
@@ -61,6 +63,7 @@
 	* [Install](#install-3)
 		* [Windows](#windows-3)
 		* [Ubuntu](#ubuntu-3)
+		* [Raspberry Pi](#raspberry-pi-3)
 	* [Properties](#properties-1)
 * [**Installing additional software**](#installing-additional-software)
    * [GStreamer for Windows](#gstreamer-for-windows)
@@ -117,6 +120,9 @@ _&ensp;&nbsp;*installation of additional software required_
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
 
 ##### &emsp;Ubuntu:
+```
+#sudo apt-get update && upgrade
+```
 - for show user interface and emulate keyboard signals:
 ```
 #sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
@@ -126,6 +132,25 @@ _&ensp;&nbsp;*installation of additional software required_
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
 ```
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
+
+##### &emsp;Raspberry Pi:
+```
+#sudo apt-get update && upgrade
+```
+- for show user interface and emulate keyboard signals:
+```
+#sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
+#sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
+#sudo apt-get install libqt5multimedia5 libqt5multimedia5-plugins qml-module-qtmultimedia -y
+
+#sudo nano /etc/xdg/qt5ct/qt5ct.conf
+#change style=gtk2 to style=gtk3
+```
+- GStreamer plugins:
+```
+#sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-rtsp -y
+```
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
 ### **BypassNAT-client-lite**
 **With user interface.**<br>
@@ -154,15 +179,37 @@ _&ensp;&nbsp;*reduced functionality_
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
 
 ##### &emsp;Ubuntu:
-- for show user interface and emulate keyboard signals:
 ```
-#sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
+#sudo apt-get update && upgrade
+```
+- for show user interface:
+```
+#sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libxkbcommon-x11-dev -y
 ```
 - GStreamer plugins:
 ```
 #sudo apt-get install gstreamer1.0-libav gstreamer1.0-plugins-bad -y
 ```
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
+
+##### &emsp;Raspberry Pi:
+```
+#sudo apt-get update && upgrade
+```
+- for show user interface:
+```
+#sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libxkbcommon-x11-dev -y
+#sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
+#sudo apt-get install libqt5multimedia5 libqt5multimedia5-plugins qml-module-qtmultimedia -y
+
+#sudo nano /etc/xdg/qt5ct/qt5ct.conf
+#change style=gtk2 to style=gtk3
+```
+- GStreamer plugins:
+```
+#sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-rtsp -y
+```
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
 ### **BypassNAT-client-console-fv**
 **Console application. 
@@ -188,6 +235,9 @@ _&ensp;&nbsp;*installation of additional software required_
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
 
 ##### &emsp;Ubuntu:
+```
+#sudo apt-get update && upgrade
+```
 - for emulate keyboard signals:
 ```
 #sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
@@ -197,6 +247,24 @@ _&ensp;&nbsp;*installation of additional software required_
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
 ```
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
+
+##### &emsp;Raspberry Pi:
+```
+#sudo apt-get update && upgrade
+```
+- for emulate keyboard signals:
+```
+#sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
+#sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
+
+#sudo nano /etc/xdg/qt5ct/qt5ct.conf
+#change style=gtk2 to style=gtk3
+```
+- GStreamer plugins:
+```
+#sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
+```
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
 #### **Properties**
  **-spas** - set server password (default 1111); _**./BypassNatClient.sh -spas 2227**_
@@ -234,6 +302,16 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 
 ##### &emsp;Ubuntu:
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
+
+##### &emsp;Raspberry Pi:
+```
+#sudo apt-get update && upgrade
+#sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
+
+#sudo nano /etc/xdg/qt5ct/qt5ct.conf
+#change style=gtk2 to style=gtk3
+```
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
 #### **Properties**
  **-spas** - set server password (default 1111); _**./BypassNatClient.sh -spas 2227**_
@@ -324,8 +402,9 @@ _<h style="font-size:8; ">&emsp;&emsp;&emsp;*if the client is connected and not 
 ### Install
  - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip;
  - start the server with parameters:
-<br>**_./BypassNatServer.sh -pas 2227 -p 1675 -la 60_** - for Ubuntu
 <br>**_BypassNatServer.ехе -pas 2227 -p 1675 -la 60_** - for Windows;
+<br>**_./BypassNatServer.sh -pas 2227 -p 1675 -la 60_** - for Ubuntu
+<br>**_chmod +x BypassNatServer and run ./BypassNatServer.sh -pas 2227 -p 1675 -la 60_** - for Raspberry Pi
 
 ### Example script to check BypassNAT-server
 
