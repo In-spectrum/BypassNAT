@@ -199,8 +199,7 @@ _&ensp;&nbsp;*reduced functionality_
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-rtsp -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it.
-- In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
 ### **BypassNAT-client-console-fv**
 **Console application. 
@@ -245,8 +244,7 @@ _&ensp;&nbsp;*installation of additional software required_
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it.
-- In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
 #### **Properties**
  **-spas** - set server password (default 1111); _**./BypassNatClient.sh -spas 2227**_
@@ -286,8 +284,7 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
 
 ##### &emsp;Raspberry Pi:
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it.
-- In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
 #### **Properties**
  **-spas** - set server password (default 1111); _**./BypassNatClient.sh -spas 2227**_
