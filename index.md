@@ -400,7 +400,7 @@ _<h style="font-size:8; ">&emsp;&emsp;&emsp;*if the client is connected and not 
  - start the server with parameters:
 <br>**_BypassNatServer.ехе -pas 2227 -p 1675 -la 60_** - for Windows;
 <br>**_./BypassNatServer.sh -pas 2227 -p 1675 -la 60_** - for Ubuntu
-<br>**_chmod +x BypassNatServer and run ./BypassNatServer.sh -pas 2227 -p 1675 -la 60_** - for Raspberry Pi
+<br>**_chmod +x BypassNatServer_** and run **_./BypassNatServer -pas 2227 -p 1675 -la 60_** - for Raspberry Pi
 
 ### Example script to check BypassNAT-server
 
