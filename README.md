@@ -19,10 +19,10 @@
 * ssh-tunnel setup, device access using ssh-protocol;
  
 **Application was tested** 
-* Windows 10, Ubuntu 20.04.6;
+* Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB);
 
 **Planned**
-* deployment on (Raspberry Pi, NVIDIA Jetson), macOS, Android ( [client-lite](#bypassnat-client-lite) );
+* deployment on NVIDIA_Jetson_Nano, macOS, Android ( [client-lite](#bypassnat-client-lite) );
 * capture desktop in Linux using Wayland; 
 
 ## Table of contents
