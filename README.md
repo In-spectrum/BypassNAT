@@ -1,3 +1,4 @@
+
 <h1 align="center">
 	<a href="https://github.com/In-spectrum/BypassNAT" target="_blank">
 		<img src="manual/images/baner.png" width="750" height="250" alt='BypassNAT | System for remote access to devices.' >
@@ -142,7 +143,6 @@ _&ensp;&nbsp;*installation of additional software required_
 #sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
 #sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
 #sudo apt-get install libqt5multimedia5 libqt5multimedia5-plugins qml-module-qtmultimedia -y
-
 #sudo nano /etc/xdg/qt5ct/qt5ct.conf
 #change style=gtk2 to style=gtk3
 ```
@@ -201,7 +201,6 @@ _&ensp;&nbsp;*reduced functionality_
 #sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libxkbcommon-x11-dev -y
 #sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
 #sudo apt-get install libqt5multimedia5 libqt5multimedia5-plugins qml-module-qtmultimedia -y
-
 #sudo nano /etc/xdg/qt5ct/qt5ct.conf
 #change style=gtk2 to style=gtk3
 ```
@@ -256,7 +255,6 @@ _&ensp;&nbsp;*installation of additional software required_
 ```
 #sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
 #sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
-
 #sudo nano /etc/xdg/qt5ct/qt5ct.conf
 #change style=gtk2 to style=gtk3
 ```
@@ -307,7 +305,6 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 ```
 #sudo apt-get update && upgrade
 #sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
-
 #sudo nano /etc/xdg/qt5ct/qt5ct.conf
 #change style=gtk2 to style=gtk3
 ```
