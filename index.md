@@ -145,8 +145,7 @@ _&ensp;&nbsp;*installation of additional software required_
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-rtsp -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it.
-- In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
 ### **BypassNAT-client-lite**
 **With user interface.**<br>
