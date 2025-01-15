@@ -20,7 +20,7 @@
 * ssh-tunnel setup, device access using ssh-protocol;
  
 **Application was tested** 
-* Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB), Android 11;
+* <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB), Android 11;</a>
 
 **Planned**
 * deployment on NVIDIA_Jetson_Nano, macOS;
