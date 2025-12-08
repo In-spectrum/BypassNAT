@@ -38,18 +38,24 @@
 
 <body>
 
-    <header>
-        <h1>{{ page.title }}</h1>
-    </header>
+     <div class="container-lg px-3 my-5 markdown-body">
+      {{ content }}      
 
-    <main>
-        {{ content }}
-    </main>
-
+      <!-- 
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/In-spectrum/BypassNAT/edit/main/index.md">Improve this page</a>.
+      </div>
+      -->
+      
+   </div>
+    
     <footer style="margin-top:50px; font-size:14px; color:#555;">
         <p>BypassNAT © 2025</p>
-        <p><a href="https://in-spectrum.github.io/BypassNAT/">Back to homepage</a></p>
+        <p><a href="https://in-spectrum.github.io/BypassNAT/">Back to toppage</a></p>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
 
 </body>
 </html>
