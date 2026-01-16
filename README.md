@@ -380,7 +380,7 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 - download installation files: <a href="https://gstreamer.freedesktop.org/data/pkg/windows/1.20.7/mingw/" target="_blank">gstreamer-1.0-mingw-x86_64-1.20.7.msi и gstreamer-1.0-devel-mingw-x86_64-1.20.7.msi</a>;
 - run with administrator rights;
 - select **Custom** and **check all plugins**;
-- add 'C:\gstreamer\1.0\mingw_x86_64\bin\' to **PATH** system;
+- add __C:\gstreamer\1.0\mingw_x86_64\bin__ to **PATH** system;
 - if after run the application there is an error with **libgst3d11.dll** or **libgst3d12.dll**- delete them from __C:\gstreamer\1.0\mingw_x86_64\lib\gstreamer-1.0__
 
 ## BypassNAT-server
