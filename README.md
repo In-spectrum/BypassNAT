@@ -78,7 +78,7 @@
   * [Functions](#functions-2)
   * [Exemple](#exemple)
   * [Features](#features-1)
-* [**Contacts**](https://github.com/In-spectrum)
+* [**Contacts**](https://in-spectrum.github.io/Porfolio/#contacts)
 * [**License**](#license)
 
 
