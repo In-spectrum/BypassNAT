@@ -80,7 +80,7 @@ layout: default
   * [Functions](#functions-2)
   * [Exemple](#exemple)
   * [Features](#features-1)
-* [**Contacts**](https://in-spectrum.github.io/Porfolio/#contacts)
+* [**Contacts**](https://in-spectrum.github.io/Porfolio/)
 * [**License**](#license)
 
 
