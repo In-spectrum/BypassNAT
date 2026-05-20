@@ -1,7 +1,7 @@
 ---
 layout: default
-title: BypassNAT
-description: System for remote access to devices
+title: BypassNAT - System for remote access to devices
+description: NAT Traversal Toolkit
 ---
 
 <h1 align="center">
