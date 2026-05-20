@@ -1,9 +1,7 @@
 ---
 layout: default
 title: BypassNAT
-description: Bypass NAT and connect devices directly through tunnels and peer-to-peer networking.
-keywords: nat traversal, p2p, tunnel, networking, udp hole punching, vpn alternative, bypass nat, relay server, direct connection
-author: In-spectrum
+description: System for remote access to devices
 ---
 
 <h1 align="center">
