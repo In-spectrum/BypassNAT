@@ -51,7 +51,7 @@ description: NAT Traversal Toolkit
   * [**BypassNAT-WebClient**](#bypassnat-webclient)
 	* [Available](#available-1)
 	* [Unavailable](#unavailable)
-	* [Specifics of use](#specifics-of-use)
+	* [Specification](#specification)
 	* [Using](#using)
   * [**BypassNAT-client-android**](#bypassnat-client-android)
 	* [Available](#available-2)
@@ -178,7 +178,7 @@ _&ensp;&nbsp;*reduced functionality_
 - capture, broadcast a desktop;;
 - audio playback if the stream is transmitted via the RTMP-protocol. To receive audio, use the RTSP-protocol for streaming from the remote device.
 
-#### **Specifics-of-use**
+#### **Specification**
 - codec installed for watch video;
 - currently, only the **HTTP**-version of the WebClient is available. To grant the web client access to files and the clipboard, configure your browser settings:
 ```
