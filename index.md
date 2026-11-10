@@ -56,24 +56,21 @@ description: NAT Traversal Toolkit
 	* [Available](#available-2)
 	* [Unavailable](#unavailable-1)
 	* [Install](#install-1)
-		* [Windows](#windows-1)
-		* [Ubuntu](#ubuntu-1)
-		* [Raspberry Pi](#raspberry-pi-1)
   * [**BypassNAT-client-console-desktop**](#bypassnat-client-console-desktop)
 	* [Available](#available-3)
 	* [Unavailable](#unavailable-2)
 	* [Install](#install-2)
-		* [Windows](#windows-2)
-		* [Ubuntu](#ubuntu-2)
-		* [Raspberry Pi](#raspberry-pi-2)
+		* [Windows](#windows-1)
+		* [Ubuntu](#ubuntu-1)
+		* [Raspberry Pi](#raspberry-pi-1)
 	* [Properties](#properties)
   * [**BypassNAT-client-console-lite**](#bypassnat-client-console-lite)
 	* [Available](#available-4)
 	* [Unavailable](#unavailable-3)
 	* [Install](#install-3)
-		* [Windows](#windows-3)
-		* [Ubuntu](#ubuntu-3)
-		* [Raspberry Pi](#raspberry-pi-3)
+		* [Windows](#windows-2)
+		* [Ubuntu](#ubuntu-2)
+		* [Raspberry Pi](#raspberry-pi-2)
 	* [Properties](#properties-1)
 * [**Installing additional software**](#installing-additional-software)
    * [GStreamer for Windows](#gstreamer-for-windows)
@@ -210,41 +207,7 @@ _&ensp;&nbsp;*reduced functionality_
 - sends/receives clipboard;
 
 #### **Install**
-##### &emsp;Windows:
-- codec installed for watch video;
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
-
-##### &emsp;Ubuntu:
-```
-#sudo apt-get update && upgrade
-```
-- for show user interface:
-```
-#sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libxkbcommon-x11-dev -y
-```
-- GStreamer plugins:
-```
-#sudo apt-get install gstreamer1.0-libav gstreamer1.0-plugins-bad -y
-```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
-
-##### &emsp;Raspberry Pi:
-```
-#sudo apt-get update && upgrade
-```
-- for show user interface:
-```
-#sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libxkbcommon-x11-dev -y
-#sudo apt-get install qtdeclarative5-* qml-module-qtquick* qtquickcontrols5-* qml-module-qtquick2 -y
-#sudo apt-get install libqt5multimedia5 libqt5multimedia5-plugins qml-module-qtmultimedia -y
-#sudo nano /etc/xdg/qt5ct/qt5ct.conf
-#change style=gtk2 to style=gtk3
-```
-- GStreamer plugins:
-```
-#sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-rtsp -y
-```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a>, unzip and install **_BypassNatClient-android_**.
 
 ### **BypassNAT-client-console-desktop**
 **Console application. 
