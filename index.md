@@ -191,9 +191,9 @@ _&ensp;&nbsp;*reduced functionality_
 #### **Using**
 - clone <a href="https://github.com/In-spectrum/BypassNAT-WebClient" target="_blank">BypassNAT-WebClient</a>;
 - run **`python3 -m http.server 8080`** in BypassNAT-WebClient folder;
-- open <a href="http://127.0.0.1:8080" target="_blank">127.0.0.1:8080</a> in your browser.
+- open <a href="http://127.0.0.1:8080" target="_blank">http://127.0.0.1:8080</a> in your browser.
 
-&ensp;&nbsp;Or open <a href="http://bypassnatclient.duckdns.org" target="_blank">bypassnatclient.duckdns.org</a>;
+&ensp;&nbsp;Or open <a href="http://bypassnatclient.duckdns.org" target="_blank">http://bypassnatclient.duckdns.org</a>;
 
 ### **BypassNAT-client-android**
 **With user interface.**<br>
