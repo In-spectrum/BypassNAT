@@ -182,13 +182,18 @@ _&ensp;&nbsp;*reduced functionality_
 
 #### **Specifics-of-use**
 - codec installed for watch video;
-- currently, only the **HTTP*-version of the WebClient is available. To grant the web client access to files and the clipboard, configure your browser settings:
+- currently, only the **HTTP**-version of the WebClient is available. To grant the web client access to files and the clipboard, configure your browser settings:
+```
+1. Go to: chrome://flags/#unsafely-treat-insecure-origin-as-secure;
+2. Enable the "Insecure origins treated as secure" option;
+3. Add `http://bypassnatclient.duckdns.org` to the field;
+4. A blue "Relaunch" button will appear at the bottom - click it to restart the browser.
+```
 
 ### **BypassNAT-client-android**
 **With user interface.**<br>
 _&ensp;&nbsp;*reduced functionality_
 <br>_&ensp;&nbsp;*lite installation of additional software required_
-<br>_&ensp;&nbsp;***under testing - some devices (PC) do not show the video stream**_
 
 #### **Available:**
 - search and manage devices on the network;
@@ -196,14 +201,13 @@ _&ensp;&nbsp;*reduced functionality_
 - sending mouse and keyboard signals;
 - sending, executing instructions in the command line on the controlled device and receiving the result from it;
 - file sharing;
-- receives clipboard;
 - setting the video stream quality;
 
 #### **Unavailable:**
 - capture, broadcast a desktop;;
 - using RTMP-protocol (use RTSP-server);
 - emulation of mouse and keyboard signals;
-- sends clipboard;
+- sends/receives clipboard;
 
 #### **Install**
 ##### &emsp;Windows:
