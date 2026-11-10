@@ -52,6 +52,7 @@ description: NAT Traversal Toolkit
 	* [Available](#available-1)
 	* [Unavailable](#unavailable)
 	* [Specifics of use](#specifics-of-use)
+	* [Using](#using)
   * [**BypassNAT-client-android**](#bypassnat-client-android)
 	* [Available](#available-2)
 	* [Unavailable](#unavailable-1)
@@ -186,6 +187,13 @@ _&ensp;&nbsp;*reduced functionality_
 3. Add `http://bypassnatclient.duckdns.org` to the field;
 4. A blue "Relaunch" button will appear at the bottom - click it to restart the browser.
 ```
+
+#### **Using**
+- clone <a href="https://github.com/In-spectrum/BypassNAT-WebClient" target="_blank">BypassNAT-WebClient</a>;
+- run **`python3 -m http.server 8080`** in folder BypassNAT-WebClient;
+- in browser open **`http://127.0.0.1:8080`**.
+
+&ensp;&nbsp;Or open **`http://bypassnatclient.duckdns.org`**
 
 ### **BypassNAT-client-android**
 **With user interface.**<br>
