@@ -93,19 +93,19 @@ description: NAT Traversal Toolkit
 
 ## **BypassNAT-client**
 ### &emsp;Functions  
-  &emsp;&nbsp;- capture, broadcast, watch a desktop (RTSP, RTMP-protocol);
+  &emsp;&nbsp;- capture, broadcast, watch a desktop (RTSP, RTMP, WebRT protocols);
   <br>&emsp;&nbsp;- sending, emulating mouse and keyboard signals;
   <br>&emsp;&nbsp;- use command line on the controlled device. [Use Command line](#use-command-line);
   <br>&emsp;&nbsp;- ability to run an ssh-client with a reverse tunnel and access the device using the ssh-protocol.
   <br>&emsp;&nbsp;&ensp;&nbsp;[Reverse SSH Tunneling](#reverse-ssh-tunneling);
   <br>&emsp;&nbsp;- file copying. Files are saved in **Download** folder. [File sharing](#file-sharing);
   <br>&emsp;&nbsp;- exchange of clipboards;
-  <br>&emsp;&nbsp;- console version for use in your applications or as an additional support service for your device.
+  <br>&emsp;&nbsp;- console version for use in your applications or as an additional support service for your device;
+  <br>&emsp;&nbsp;- **<span style="color: red;">(new)</span>** web-client for managing devices via a browser.
     
 ### &emsp;Compile from source
- &emsp;&nbsp;- install <a href="https://git-scm.com/downloads" target="_blank">git</a> and <a href="https://doc.qt.io/qt-6/get-and-install-qt.html" target="_blank">Qt</a> (v.6.7.3 or v.5.15.2, Qt Creator v.14.0.1);
+ &emsp;&nbsp;- install <a href="https://git-scm.com/downloads" target="_blank">git</a> and <a href="https://doc.qt.io/qt-6/get-and-install-qt.html" target="_blank">Qt</a> (v.6.11.1);
  <br>&emsp;&nbsp;- clone <a href="https://github.com/In-spectrum/BypassNAT" target="_blank">the BypassNAT repository</a> and go to the **'src'** folder;
- <br>&emsp;&nbsp;- select **'main'** or  **'console-lite'** branch;
  <br>&emsp;&nbsp;- open file ***.pro** in the Qt Creator;
  <br>&emsp;&nbsp;- run the project;
 
@@ -165,27 +165,24 @@ _&ensp;&nbsp;*installation of additional software required_
 ### **BypassNAT-WebClient**
 **With user interface.**<br>
 _&ensp;&nbsp;*reduced functionality_
-<br>_&ensp;&nbsp;*lite installation of additional software required_
-<br>_&ensp;&nbsp;***under testing - some devices (PC) do not show the video stream**_
 
 #### **Available:**
 - search and manage devices on the network;
-- watch a desktop;
 - sending mouse and keyboard signals;
+- emulation of mouse and keyboard signals;
 - sending, executing instructions in the command line on the controlled device and receiving the result from it;
 - file sharing;
-- receives clipboard;
+- receives/sends clipboard;
 - setting the video stream quality;
+- watch a desktop (використання WebRTC-protocol);
 
 #### **Unavailable:**
 - capture, broadcast a desktop;;
-- using RTMP-protocol (use RTSP-server);
-- emulation of mouse and keyboard signals;
-- sends clipboard;
+- audio playback if the stream is transmitted via the RTMP-protocol. To receive audio, use the RTSP-protocol for streaming from the remote device.
 
 #### **Specifics-of-use**
 - codec installed for watch video;
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
+- currently, only the **HTTP*-version of the WebClient is available. To grant the web client access to files and the clipboard, configure your browser settings:
 
 ### **BypassNAT-client-android**
 **With user interface.**<br>
