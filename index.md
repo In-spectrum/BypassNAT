@@ -25,7 +25,7 @@ description: NAT Traversal Toolkit
 * ssh-tunnel setup, device access using ssh-protocol;
  
 **Application was tested**
-* <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB), Android 11;</a>
+* <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">Windows 10, Ubuntu 26.04.1, Raspberry Pi 4 (Model B 8GB), Android 11;</a>
 * <a href="http://bypassnatclient.duckdns.org/" target="_blank">Web browser;</a>
 
 **Planned**
@@ -48,24 +48,28 @@ description: NAT Traversal Toolkit
 		* [Windows](#windows)
 		* [Ubuntu](#ubuntu)
 		* [Raspberry Pi](#raspberry-pi)
-  * [**BypassNAT-client-android**](#bypassnat-client-android)
+  * [**BypassNAT-WebClient**](#bypassnat-webclient)
 	* [Available](#available-1)
 	* [Unavailable](#unavailable)
+	* [Specifics of use](#specifics-of-use)
+  * [**BypassNAT-client-android**](#bypassnat-client-android)
+	* [Available](#available-2)
+	* [Unavailable](#unavailable-1)
 	* [Install](#install-1)
 		* [Windows](#windows-1)
 		* [Ubuntu](#ubuntu-1)
 		* [Raspberry Pi](#raspberry-pi-1)
   * [**BypassNAT-client-console-desktop**](#bypassnat-client-console-desktop)
-	* [Available](#available-2)
-	* [Unavailable](#unavailable-1)
+	* [Available](#available-3)
+	* [Unavailable](#unavailable-2)
 	* [Install](#install-2)
 		* [Windows](#windows-2)
 		* [Ubuntu](#ubuntu-2)
 		* [Raspberry Pi](#raspberry-pi-2)
 	* [Properties](#properties)
   * [**BypassNAT-client-console-lite**](#bypassnat-client-console-lite)
-	* [Available](#available-3)
-	* [Unavailable](#unavailable-2)
+	* [Available](#available-4)
+	* [Unavailable](#unavailable-3)
 	* [Install](#install-3)
 		* [Windows](#windows-3)
 		* [Ubuntu](#ubuntu-3)
@@ -157,6 +161,31 @@ _&ensp;&nbsp;*installation of additional software required_
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-rtsp -y
 ```
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+
+### **BypassNAT-WebClient**
+**With user interface.**<br>
+_&ensp;&nbsp;*reduced functionality_
+<br>_&ensp;&nbsp;*lite installation of additional software required_
+<br>_&ensp;&nbsp;***under testing - some devices (PC) do not show the video stream**_
+
+#### **Available:**
+- search and manage devices on the network;
+- watch a desktop;
+- sending mouse and keyboard signals;
+- sending, executing instructions in the command line on the controlled device and receiving the result from it;
+- file sharing;
+- receives clipboard;
+- setting the video stream quality;
+
+#### **Unavailable:**
+- capture, broadcast a desktop;;
+- using RTMP-protocol (use RTSP-server);
+- emulation of mouse and keyboard signals;
+- sends clipboard;
+
+#### **Specifics-of-use**
+- codec installed for watch video;
+- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
 
 ### **BypassNAT-client-android**
 **With user interface.**<br>
