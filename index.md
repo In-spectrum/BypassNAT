@@ -190,8 +190,8 @@ _&ensp;&nbsp;*reduced functionality_
 
 #### **Using**
 - clone <a href="https://github.com/In-spectrum/BypassNAT-WebClient" target="_blank">BypassNAT-WebClient</a>;
-- run **`python3 -m http.server 8080`** in folder BypassNAT-WebClient;
-- in browser open **`http://127.0.0.1:8080`**.
+- run **`python3 -m http.server 8080`** in BypassNAT-WebClient folder;
+- open **`http://127.0.0.1:8080`** in your browser.
 
 &ensp;&nbsp;Or open **`http://bypassnatclient.duckdns.org`**
 
