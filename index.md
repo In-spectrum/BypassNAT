@@ -190,7 +190,6 @@ _&ensp;&nbsp;*reduced functionality_
 ### **BypassNAT-client-android**
 **With user interface.**<br>
 _&ensp;&nbsp;*reduced functionality_
-<br>_&ensp;&nbsp;*lite installation of additional software required_
 
 #### **Available:**
 - search and manage devices on the network;
@@ -202,7 +201,6 @@ _&ensp;&nbsp;*reduced functionality_
 
 #### **Unavailable:**
 - capture, broadcast a desktop;;
-- using RTMP-protocol (use RTSP-server);
 - emulation of mouse and keyboard signals;
 - sends/receives clipboard;
 
