@@ -18,7 +18,7 @@ description: NAT Traversal Toolkit
 
 **Purpose**
 * get remote access to devices located on a network where NAT is used;
-* using a private (or other accessible) server for:
+* using a private server for:
   * device management;
   * file sharing;
   * capture, broadcast and watch a desktop; 
@@ -26,10 +26,10 @@ description: NAT Traversal Toolkit
  
 **Application was tested**
 * <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB), Android 11;</a>
+* <a href="http://bypassnatclient.duckdns.org/" target="_blank">Web browser;</a>
 
 **Planned**
 * deployment on NVIDIA_Jetson_Nano, macOS;
-* capture desktop in Linux using Wayland; 
 
 ## Table of contents
 
@@ -42,20 +42,20 @@ description: NAT Traversal Toolkit
 	* [Reverse SSH Tunneling](#reverse-ssh-tunneling)
 	* [Use another available server](#use-another-available-server)
 	* [Commands for the server](#commands-for-the-server)
-  * [**BypassNAT-client-fv**](#bypassnat-client-fv)
+  * [**BypassNAT-client-desktop**](#bypassnat-client-desktop)
 	* [Available](#available)
 	* [Install](#install)
 		* [Windows](#windows)
 		* [Ubuntu](#ubuntu)
 		* [Raspberry Pi](#raspberry-pi)
-  * [**BypassNAT-client-lite**](#bypassnat-client-lite)
+  * [**BypassNAT-client-android**](#bypassnat-client-android)
 	* [Available](#available-1)
 	* [Unavailable](#unavailable)
 	* [Install](#install-1)
 		* [Windows](#windows-1)
 		* [Ubuntu](#ubuntu-1)
 		* [Raspberry Pi](#raspberry-pi-1)
-  * [**BypassNAT-client-console-fv**](#bypassnat-client-console-fv)
+  * [**BypassNAT-client-console-desktop**](#bypassnat-client-console-desktop)
 	* [Available](#available-2)
 	* [Unavailable](#unavailable-1)
 	* [Install](#install-2)
@@ -107,7 +107,7 @@ description: NAT Traversal Toolkit
 
 ### &emsp;[Exemples](#exemples-1)
 
-### BypassNAT-client-fv
+### BypassNAT-client-desktop
 **Full version.**<br>
 _&ensp;&nbsp;*installation of additional software required_
 
@@ -158,7 +158,7 @@ _&ensp;&nbsp;*installation of additional software required_
 ```
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
-### **BypassNAT-client-lite**
+### **BypassNAT-client-android**
 **With user interface.**<br>
 _&ensp;&nbsp;*reduced functionality_
 <br>_&ensp;&nbsp;*lite installation of additional software required_
@@ -216,7 +216,7 @@ _&ensp;&nbsp;*reduced functionality_
 ```
 - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
 
-### **BypassNAT-client-console-fv**
+### **BypassNAT-client-console-desktop**
 **Console application. 
 <br>Use in your applications or as an additional support service for your device.**<br>
 _&ensp;&nbsp;*installation of additional software required_
