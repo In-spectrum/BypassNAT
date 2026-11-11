@@ -99,7 +99,7 @@ description: NAT Traversal Toolkit
   <br>&emsp;&nbsp;- file copying. Files are saved in **Download** folder. [File sharing](#file-sharing);
   <br>&emsp;&nbsp;- exchange of clipboards;
   <br>&emsp;&nbsp;- console version for use in your applications or as an additional support service for your device;
-  <br>&emsp;&nbsp;- **<span style="color: red;">(new)</span>** web-client for managing devices via a browser.
+  <br>&emsp;&nbsp;- **<span style="color: red;">(NEW)</span>** web-client for managing devices via a browser.
     
 ### &emsp;Compile from source
  &emsp;&nbsp;- install <a href="https://git-scm.com/downloads" target="_blank">git</a> and <a href="https://doc.qt.io/qt-6/get-and-install-qt.html" target="_blank">Qt</a> (v.6.11.1);
@@ -364,16 +364,16 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 &emsp;&nbsp;_- enter password of **dev_target**._
 
 ### Use another available server
-**Allows you to  <ins>TEMPORARILY</ins>  use an already configured server _158.101.219.244_**
+**Allows you to  <ins>TEMPORARILY</ins>  use an already configured server _bypassnatclient.duckdns.org_**
 <br>
-<br>The time of using a third-party server (_without an access key_) **10 min**. Next, the server is unavailable **30 min**. Next, again, you can use the server **10 min**. And so on...
+<br>The time of using a third-party server (_without an access key_) **30 min**. Next, the server is unavailable **30 min**. Next, again, you can use the server **30 min**. And so on...
 <br>The access key allows you to use a third-party server longer (_until a specific date. Date is discussed additionally_).
 <br>
 <br>&emsp;**- console version of the application:**
 ~~~
 # ./BypassNatClient.sh -sip 158.101.219.244 -log user1 -pas user1111 -ds 1 -kds ExxxRt37j2
 ~~~
-&emsp;**- versions of the application with user interface:** select Menu -> Server -> **use the developer server** -> enter **158.101.219.244** -> _( optional: enter **key** )_ -> New connect;
+&emsp;**- versions of the application with user interface:** select Menu -> Server -> **use the developer server** -> _( optional: enter **key** )_ -> New connect;
 
 ### Commands for the server
 - set time for [disconnecting clients with low activity](#properties-2): values ​​from 30 to 300sec.
@@ -381,7 +381,7 @@ _<br>&ensp;&nbsp;*no additional software installation required_
   
 ## Installing additional software
 ### GStreamer for Windows
-- download installation files: <a href="https://gstreamer.freedesktop.org/data/pkg/windows/1.20.7/mingw/" target="_blank">gstreamer-1.0-mingw-x86_64-1.20.7.msi и gstreamer-1.0-devel-mingw-x86_64-1.20.7.msi</a>;
+- download installation files: <a href="https://gstreamer.freedesktop.org/data/pkg/windows/1.26.9/mingw/" target="_blank">gstreamer-1.0-mingw-x86_64-1.26.9.msi и gstreamer-1.0-devel-mingw-x86_64-1.26.9.msi</a>;
 - run with administrator rights;
 - select **Custom** and **check all plugins**;
 - add __C:\gstreamer\1.0\mingw_x86_64\bin__ to **PATH** system;
@@ -397,7 +397,10 @@ _<br>&ensp;&nbsp;*no additional software installation required_
    
 ### Properties
 **-pas** - set server password (default 1111); _**./BypassNatServer.sh -pas 2227**_<br>
-**-p** - set listen port; _**./BypassNatServer.sh -p 1675**_<br>
+**-p** - set listen TCP port; _**./BypassNatServer.sh -p 1675**_<br>
+**-wp** - set listen WebSocket port; _**./BypassNatServer.sh -wp 1677**_<br>
+_<h style="font-size:8; ">&emsp;&emsp;&emsp;*if the WebSocket port is not specified, it will be assigned the value of the TCP port + 1.</h>_<br>
+**-lc** - key that, when entered, allows the client to see a list of all connected clients; _**./BypassNatServer.sh -lc uall**_<br>
 **-la** - time to disconnect clients with low activity; _**./BypassNatServer.sh -la 60**_<br>
 _<h style="font-size:8; ">&emsp;&emsp;&emsp;*if the client is connected and not in use, it will be disconnected from the server after 60sec.<br>
 &emsp;&emsp;&emsp;&ensp;After 30sec the client will reconnect to the server to identification on the network.</h>_
@@ -417,8 +420,10 @@ _<h style="font-size:8; ">&emsp;&emsp;&emsp;*if the client is connected and not 
 sleep 10
 
 a_pFNS_tcp=1137 #for BypassNatServer
+a_pFNS_websoc=1138 #for BypassNatServer
 a_pRTSP=8554 #for RTSP
 a_pRTMP=1927 #for RTMP
+a_pWebRT=1989 #for WebRT
 a_pSSH=6744 #for SSH
 
 # opening of ports
@@ -426,7 +431,9 @@ sudo systemctl start firewalld
 sudo firewall-cmd --zone=public --add-port=${a_pSSH}/tcp --permanent #for SSH
 sudo firewall-cmd --zone=public --add-port=${a_pRTSP}/tcp --permanent #for RTSP
 sudo firewall-cmd --zone=public --add-port=${a_pRTMP}/tcp --permanent #for RTMP
+sudo firewall-cmd --zone=public --add-port=${a_pWebRT}/tcp --permanent #for WebRT
 sudo firewall-cmd --zone=public --add-port=${a_pFNS_tcp}/tcp --permanent #for BypassNatServer
+sudo firewall-cmd --zone=public --add-port=${a_pFNS_websoc}/tcp --permanent #for BypassNatServer
 sudo firewall-cmd --reload
 
 while true
@@ -448,7 +455,7 @@ do
         echo "RTSP-server NOT STARTED"
 
         cd /home/user/Mediamtx
-        MTX_RTSPADDRESS=":${a_pRTSP}" MTX_RTMPADDRESS=":${a_pRTMP}" MTX_PROTOCOLS="tcp,udp" ./mediamtx &
+        MTX_RTSPADDRESS=":${a_pRTSP}" MTX_RTMPADDRESS=":${a_pRTMP}" MTX_WEBRTADDRESS=":${a_pWebRT}" MTX_PROTOCOLS="tcp,udp" ./mediamtx &
     fi
 
     sleep 2
@@ -462,7 +469,7 @@ done
 Publishing and broadcasting a video stream of a desktop.
 
 ### Exemple
-- <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">mediamtx</a> - RTSP, RTMP and other protocols available;
+- <a href="https://github.com/bluenviron/mediamtx/tree/main" target="_blank">mediamtx</a> - RTSP, RTMP, WebRT and other protocols available;
 - <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-video-streaming-server-using-nginx-rtmp-on-ubuntu-20-04" target="_blank">Nginx-RTMP</a> - RTMP protocol available;
 - or other RTSP, RTMP server;
 
