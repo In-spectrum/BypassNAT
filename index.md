@@ -371,9 +371,9 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 <br>
 <br>&emsp;**- console version of the application:**
 ~~~
-# ./BypassNatClient.sh -sip 158.101.219.244 -log user1 -pas user1111 -ds 1 -kds ExxxRt37j2
+# ./BypassNatClient.sh -sip bypassnatclient.duckdns.org -log user1 -pas user1111 -ds 1 -kds ExxxRt37j2
 ~~~
-&emsp;**- versions of the application with user interface:** select Menu -> Server -> **use the developer server** -> _( optional: enter **key** )_ -> New connect;
+&emsp;**- versions of the application with user interface:** select Menu -> Server -> **use the developer server** -> New connect;
 
 ### Commands for the server
 - set time for [disconnecting clients with low activity](#properties-2): values ​​from 30 to 300sec.
