@@ -77,14 +77,12 @@ description: NAT Traversal Toolkit
    * [GStreamer for Windows](#gstreamer-for-windows)
 * [**BypassNAT-server**](#bypassnat-server)
   * [Functions](#functions-1)
-  * [Features](#features)
   * [Properties](#properties-2)
   * [Install](#install-4)
   * [Example script to check BypassNAT-server](#example-script-to-check-bypassnat-server)
 * [**Video-server**](#video-server)
   * [Functions](#functions-2)
   * [Exemple](#exemple)
-  * [Features](#features-1)
 * [**Contacts**](https://in-spectrum.github.io/Portfolio/)
 * [**License**](#license)
 
@@ -390,10 +388,6 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 ## BypassNAT-server
 ### Functions
 - search for available devices and exchange data between them;
-
-### Features
-- the server must be online (statistics are kept on the number of working BypassNAT-servers);
-- server usage, including in local networks, without collecting statistics is under development;
    
 ### Properties
 **-pas** - set server password (default 1111); _**./BypassNatServer.sh -pas 2227**_<br>
