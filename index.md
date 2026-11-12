@@ -83,6 +83,7 @@ description: NAT Traversal Toolkit
 * [**Video-server**](#video-server)
   * [Functions](#functions-2)
   * [Exemple](#exemple)
+  * [Features](#features)
 * [**Contacts**](https://in-spectrum.github.io/Portfolio/)
 * [**License**](#license)
 
